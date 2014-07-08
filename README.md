@@ -12,7 +12,7 @@ The **AdRoll-iOS-SDK** framework enables [AdRoll](http://www.adroll.com) custome
 Add to your Podfile the AdRoll pod:
 
 ```
-pod 'AdRoll', :git => 'git@github.com:SemanticSugar/AdRoll-iOS-SDK.git'
+pod 'AdRoll', :git => 'https://github.com/AdRoll/adroll-ios.git'
 ```
 
 Update your project dependencies with the command `$ pod install`. You should be now ready to jump to the [Integration](#Integration).
@@ -26,10 +26,10 @@ Download the AdRoll-iOS-SDK framework with one of the following approaches:
 - As a [git-submodule](http://git-scm.com/docs/git-submodule), run the following command on the console from your project's root directory:
 	
 	```
-$ mkdir -p Vendor && git submodule add git@github.com:SemanticSugar/AdRoll-iOS-SDK.git Vendor/AdRoll
+$ mkdir -p Vendor && git submodule add git https://github.com/AdRoll/adroll-ios.git Vendor/AdRoll
 ```
 	
-- As a zip file, click on the following link: [Download latest version](https://github.com/SemanticSugar/AdRoll-iOS-SDK/archive/master.zip)
+- As a zip file, click on the following link: [Download latest version](https://github.com/AdRoll/adroll-ios/archive/master.zip)
 	
 
 ### 2. Add the SDK to your app
