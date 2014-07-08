@@ -1,0 +1,1348 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdRoll Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ARPixel </a></h1>
+				<a id="developerHome" href="../index.html">AdRoll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdRoll Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/initializeWithAdvertisableId:pixelId:">&nbsp;&nbsp;&nbsp;&nbsp;+ initializeWithAdvertisableId:pixelId:</option>
+	
+	<option value="//api/name/setUserId:">&nbsp;&nbsp;&nbsp;&nbsp;+ setUserId:</option>
+	
+	<option value="//api/name/setUserEmail:">&nbsp;&nbsp;&nbsp;&nbsp;+ setUserEmail:</option>
+	
+	<option value="//api/name/setUserPhoneNumber:">&nbsp;&nbsp;&nbsp;&nbsp;+ setUserPhoneNumber:</option>
+	
+	<option value="//api/name/setHashUserData:">&nbsp;&nbsp;&nbsp;&nbsp;+ setHashUserData:</option>
+	
+	<option value="//api/name/logEvent:">&nbsp;&nbsp;&nbsp;&nbsp;+ logEvent:</option>
+	
+	<option value="//api/name/logEvent:properties:">&nbsp;&nbsp;&nbsp;&nbsp;+ logEvent:properties:</option>
+	
+	<option value="//api/name/logEventProductViewed:currency:productId:productName:productType:properties:">&nbsp;&nbsp;&nbsp;&nbsp;+ logEventProductViewed:currency:productId:productName:productType:properties:</option>
+	
+	<option value="//api/name/logEventAddedToCart:quantity:currency:productId:productName:productType:properties:">&nbsp;&nbsp;&nbsp;&nbsp;+ logEventAddedToCart:quantity:currency:productId:productName:productType:properties:</option>
+	
+	<option value="//api/name/logEventPurchase:quantity:currency:productId:productName:productType:properties:">&nbsp;&nbsp;&nbsp;&nbsp;+ logEventPurchase:quantity:currency:productId:productName:productType:properties:</option>
+	
+	<option value="//api/name/disableAutomaticInAppPurchaseEventLogging">&nbsp;&nbsp;&nbsp;&nbsp;+ disableAutomaticInAppPurchaseEventLogging</option>
+	
+	<option value="//api/name/setVerboseLogging:">&nbsp;&nbsp;&nbsp;&nbsp;+ setVerboseLogging:</option>
+	
+	<option value="//api/name/initializeWithAdvertisableId:pixelId:scheme:">&nbsp;&nbsp;&nbsp;&nbsp;+ initializeWithAdvertisableId:pixelId:scheme:</option>
+	
+	<option value="//api/name/setPageViewWithURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ setPageViewWithURL:</option>
+	
+	<option value="//api/name/setPageViewWithURL:properties:">&nbsp;&nbsp;&nbsp;&nbsp;+ setPageViewWithURL:properties:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_DeepLinking Methods">DeepLinking Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_NavigationLogging Methods">NavigationLogging Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeWithAdvertisableId:pixelId:">initializeWithAdvertisableId:pixelId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUserId:">setUserId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUserEmail:">setUserEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUserPhoneNumber:">setUserPhoneNumber:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setHashUserData:">setHashUserData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logEvent:">logEvent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logEvent:properties:">logEvent:properties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logEventProductViewed:currency:productId:productName:productType:properties:">logEventProductViewed:currency:productId:productName:productType:properties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logEventAddedToCart:quantity:currency:productId:productName:productType:properties:">logEventAddedToCart:quantity:currency:productId:productName:productType:properties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logEventPurchase:quantity:currency:productId:productName:productType:properties:">logEventPurchase:quantity:currency:productId:productName:productType:properties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disableAutomaticInAppPurchaseEventLogging">disableAutomaticInAppPurchaseEventLogging</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setVerboseLogging:">setVerboseLogging:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeWithAdvertisableId:pixelId:scheme:">initializeWithAdvertisableId:pixelId:scheme:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setPageViewWithURL:">setPageViewWithURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setPageViewWithURL:properties:">setPageViewWithURL:properties:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdRoll Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdRoll Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdRoll.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@abstract
+Track clients and their events to later segment your AdRoll campaigns.</p>
+
+<p>@par
+AdRoll is the world’s largest retargeting platform with over 10,000 active advertisers worldwide. The company’s
+innovative and easy-to-use marketing platform enable brands of all sizes to create personalized ad campaigns based
+on their own website data, ensuring maximum return on online advertising spend. With a 97% customer rate, AdRoll
+provides unmatched transparency and reach across the largest display inventory sources, including Google AdX and
+Facebook Exchange.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeWithAdvertisableId:pixelId:">+&nbsp;initializeWithAdvertisableId:pixelId:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUserId:">+&nbsp;setUserId:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUserEmail:">+&nbsp;setUserEmail:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUserPhoneNumber:">+&nbsp;setUserPhoneNumber:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setHashUserData:">+&nbsp;setHashUserData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logEvent:">+&nbsp;logEvent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logEvent:properties:">+&nbsp;logEvent:properties:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logEventProductViewed:currency:productId:productName:productType:properties:">+&nbsp;logEventProductViewed:currency:productId:productName:productType:properties:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logEventAddedToCart:quantity:currency:productId:productName:productType:properties:">+&nbsp;logEventAddedToCart:quantity:currency:productId:productName:productType:properties:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logEventPurchase:quantity:currency:productId:productName:productType:properties:">+&nbsp;logEventPurchase:quantity:currency:productId:productName:productType:properties:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disableAutomaticInAppPurchaseEventLogging">+&nbsp;disableAutomaticInAppPurchaseEventLogging</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setVerboseLogging:">+&nbsp;setVerboseLogging:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="DeepLinking Methods" name="task_DeepLinking Methods"></a>
+						<h3 class="subsubtitle task-title">DeepLinking Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeWithAdvertisableId:pixelId:scheme:">+&nbsp;initializeWithAdvertisableId:pixelId:scheme:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="NavigationLogging Methods" name="task_NavigationLogging Methods"></a>
+						<h3 class="subsubtitle task-title">NavigationLogging Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setPageViewWithURL:">+&nbsp;setPageViewWithURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setPageViewWithURL:properties:">+&nbsp;setPageViewWithURL:properties:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeWithAdvertisableId:pixelId:" title="initializeWithAdvertisableId:pixelId:"></a>
+	<h3 class="subsubtitle method-title">initializeWithAdvertisableId:pixelId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize the service using your AdRoll&rsquo;s Advertisable and Pixel identifiers.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)initializeWithAdvertisableId:(NSString *)<em>advertisableId</em> pixelId:(NSString *)<em>pixelId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>advertisableId</em></dt>
+			<dd><p>the id of the advertisable</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pixelId</em></dt>
+			<dd><p>the id of the pixel</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> The Advertisable and Pixel Ids need to be initialized in the App Delegate method
+\c application:didFinishLaunchingWithOptions: before any event is logged.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUserId:" title="setUserId:"></a>
+	<h3 class="subsubtitle method-title">setUserId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A unique id for the user in your app. (typically this is the ID for the user in your database)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setUserId:(NSString *)<em>userId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userId</em></dt>
+			<dd><p>The string name for the user id, nil to clear</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUserEmail:" title="setUserEmail:"></a>
+	<h3 class="subsubtitle method-title">setUserEmail:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The user&rsquo;s email address.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setUserEmail:(NSString *)<em>userEmail</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userEmail</em></dt>
+			<dd><p>The user&rsquo;s email address, nil to clear</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUserPhoneNumber:" title="setUserPhoneNumber:"></a>
+	<h3 class="subsubtitle method-title">setUserPhoneNumber:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The user&rsquo;s phone number.
+Phone numbers are E164 format (without +) Ex: 14151234567</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setUserPhoneNumber:(NSString *)<em>userPhoneNumber</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userPhoneNumber</em></dt>
+			<dd><p>The user&rsquo;s email address or nil to clear</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setHashUserData:" title="setHashUserData:"></a>
+	<h3 class="subsubtitle method-title">setHashUserData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Hash user data (userEmail, userPhone, userId) - if set user data will MD5 hashed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setHashUserData:(BOOL)<em>flag</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>flag</em></dt>
+			<dd><p>if YES user data will be hashed, clear text values will not be used.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logEvent:" title="logEvent:"></a>
+	<h3 class="subsubtitle method-title">logEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Log an application usage event with a given name</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logEvent:(NSString *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The event name to be tracked (e.g. AdRollEventName.ProductViewed),
+or you can use a custom name (e.g @&ldquo;awesome-event&rdquo;).</p>
+
+<p>Example Usage: [ARPixel logEvent:AdRollEventName.Reservation];</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logEvent:properties:" title="logEvent:properties:"></a>
+	<h3 class="subsubtitle method-title">logEvent:properties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Log an application usage event with a given name and properties</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logEvent:(NSString *)<em>name</em> properties:(NSDictionary *)<em>properties</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The event name to be tracked (e.g. AdRollEventName.ProductViewed),
+or you can use a custom name (e.g @&ldquo;awesome-event&rdquo;).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>properties</em></dt>
+			<dd><p>The set of properties associated to the event.</p>
+
+<p>Example Usage: [ARPixel logEvent:AdRollEventName.Searched
+properties:@{AdRollEventPropertySearchString : @&ldquo;mens shoes&rdquo;}];</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logEventProductViewed:currency:productId:productName:productType:properties:" title="logEventProductViewed:currency:productId:productName:productType:properties:"></a>
+	<h3 class="subsubtitle method-title">logEventProductViewed:currency:productId:productName:productType:properties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A convenience method for logging when content/product is viewed
+Do not call this method for IAP events as they are automatically logged, (unless explicitly disabled)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logEventProductViewed:(double)<em>price</em> currency:(NSString *)<em>currency</em> productId:(NSString *)<em>productId</em> productName:(NSString *)<em>productName</em> productType:(NSString *)<em>productType</em> properties:(NSDictionary *)<em>properties</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>price</em></dt>
+			<dd><p>content/product cost, or 0 if no cost.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currency</em></dt>
+			<dd><p>3 letter ISO-4217 currency code (eg. USD, EUR, GBP, AUD)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productId</em></dt>
+			<dd><p>any type of unique identifier such as SKU or EAN (EAN barcode preferred if available) or nil if none</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productName</em></dt>
+			<dd><p>the name or description of the product e.g. @&ldquo;XBuds Headphones&rdquo; or nil if none</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productType</em></dt>
+			<dd><p>eg. @&ldquo;product&rdquo;, @&ldquo;music&rdquo;, @&ldquo;photo&rdquo;, @&ldquo;video&rdquo;.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>properties</em></dt>
+			<dd><p>additional properties associated with the purchase, or nil if none.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note: This method is equivalent to calling
+[ARPixel logEvent:AdRollEventName.ProductViewed properties:@{AdRollEventPropertyProductPrice : @(99.99),
+AdRollEventPropertyCurrency : @&ldquo;USD&rdquo;,
+AdRollEventPropertyProductId : @&ldquo;12345&rdquo;,
+AdRollEventPropertyProductName : @&ldquo;Phat Fixie&rdquo;,
+AdRollEventPropertyProductType : @&ldquo;bike&rdquo;}];</p>
+
+<p>If there are multiple different items view at one time, call logPurchase for each item type</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logEventAddedToCart:quantity:currency:productId:productName:productType:properties:" title="logEventAddedToCart:quantity:currency:productId:productName:productType:properties:"></a>
+	<h3 class="subsubtitle method-title">logEventAddedToCart:quantity:currency:productId:productName:productType:properties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A convenience method for logging when an item has been added to a cart.
+If there are multiple items added to a cart, call logAddToCart for each item</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logEventAddedToCart:(double)<em>price</em> quantity:(int)<em>quantity</em> currency:(NSString *)<em>currency</em> productId:(NSString *)<em>productId</em> productName:(NSString *)<em>productName</em> productType:(NSString *)<em>productType</em> properties:(NSDictionary *)<em>properties</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>price</em></dt>
+			<dd><p>content/product cost, or 0 if no cost.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>quantity</em></dt>
+			<dd><p>the number of items added.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currency</em></dt>
+			<dd><p>3 letter ISO-4217 currency code (eg. USD, EUR, GBP, AUD)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productId</em></dt>
+			<dd><p>any type of unique identifier such as SKU or EAN (EAN barcode preferred if available) or nil if none</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productName</em></dt>
+			<dd><p>the name or description of the product e.g. @&ldquo;XBuds Headphones&rdquo; or nil if none</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productType</em></dt>
+			<dd><p>eg. @&ldquo;product&rdquo;, @&ldquo;music&rdquo;, @&ldquo;photo&rdquo;, @&ldquo;video&rdquo;.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>properties</em></dt>
+			<dd><p>additional properties associated with the purchase, or nil if none.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If there are multiple different items added to a cart, logAddToCart for each item type</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logEventPurchase:quantity:currency:productId:productName:productType:properties:" title="logEventPurchase:quantity:currency:productId:productName:productType:properties:"></a>
+	<h3 class="subsubtitle method-title">logEventPurchase:quantity:currency:productId:productName:productType:properties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A convenience method for logging a non-IAP purchase.
+Do not call this method for IAP events as they are automatically logged, (unless explicitly disabled)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logEventPurchase:(double)<em>price</em> quantity:(int)<em>quantity</em> currency:(NSString *)<em>currency</em> productId:(NSString *)<em>productId</em> productName:(NSString *)<em>productName</em> productType:(NSString *)<em>productType</em> properties:(NSDictionary *)<em>properties</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>price</em></dt>
+			<dd><p>content/product cost, or 0 if no cost.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>quantity</em></dt>
+			<dd><p>the number of items added.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currency</em></dt>
+			<dd><p>3 letter ISO-4217 currency code (eg. USD, EUR, GBP, AUD)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productId</em></dt>
+			<dd><p>any type of unique identifier such as SKU or EAN (EAN barcode preferred if available) or nil if none</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productName</em></dt>
+			<dd><p>the name or description of the product e.g. @&ldquo;XBuds Headphones&rdquo; or nil if none</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productType</em></dt>
+			<dd><p>eg. @&ldquo;product&rdquo;, @&ldquo;music&rdquo;, @&ldquo;photo&rdquo;, @&ldquo;video&rdquo;.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>properties</em></dt>
+			<dd><p>additional properties associated with the purchase, or nil if none.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If there are multiple items purchased at one time, call logPurchase for each item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disableAutomaticInAppPurchaseEventLogging" title="disableAutomaticInAppPurchaseEventLogging"></a>
+	<h3 class="subsubtitle method-title">disableAutomaticInAppPurchaseEventLogging</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>IAP events are automatically logged to simplify segmenting.
+Call this method to disable this feature.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)disableAutomaticInAppPurchaseEventLogging</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setVerboseLogging:" title="setVerboseLogging:"></a>
+	<h3 class="subsubtitle method-title">setVerboseLogging:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Verbose messages are useful for debugging the integration of the AdRoll SDK in your application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setVerboseLogging:(BOOL)<em>enabled</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>\c YES to enable verbose messages.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Error messages and warnings will always be logged to STDOUT (the Console). Enabling verbose messages success messages
+and status information will also be output so you can verify the integration.</p>
+
+<p>Verbose messages are disabled by default.</p><div class="warning"><p><strong>Warning:</strong> This method is only available in debug mode. Wrap the call in \c #if \c DEBUG \c … \c #endif preporcessor
+directives, or delete it after validating the integration.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeWithAdvertisableId:pixelId:scheme:" title="initializeWithAdvertisableId:pixelId:scheme:"></a>
+	<h3 class="subsubtitle method-title">initializeWithAdvertisableId:pixelId:scheme:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize the service using your AdRoll&rsquo;s Advertisable and Pixel identifiers.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)initializeWithAdvertisableId:(NSString *)<em>advertisableId</em> pixelId:(NSString *)<em>pixelId</em> scheme:(NSString *)<em>scheme</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>advertisableId</em></dt>
+			<dd><p>the id of the advertisable</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pixelId</em></dt>
+			<dd><p>the id of the pixel</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scheme</em></dt>
+			<dd><p>an optional schema can be used to identify your app when building segments.
+The provided schema must be a valid URL scheme. See <a href="http://www.ietf.org/rfc/rfc2396.txt">http://www.ietf.org/rfc/rfc2396.txt</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Setting the default scheme is advanced functionality and discouraged initially. We will disclose this
+method to developers when necessary accompanied by additional documentation and limitations.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll+Advanced.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setPageViewWithURL:" title="setPageViewWithURL:"></a>
+	<h3 class="subsubtitle method-title">setPageViewWithURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Let the current application location to the given page. This method will log a page view event with the
+new location.</p>
+
+<p>@par The given location will be used as the referrer for the following events logged.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setPageViewWithURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>an RFC 2396 compliant url (e.g. tld.test.your-app://page/in/the/app)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll+Advanced.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setPageViewWithURL:properties:" title="setPageViewWithURL:properties:"></a>
+	<h3 class="subsubtitle method-title">setPageViewWithURL:properties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Let the current application location to the given page. This method will log a page view event with the
+new location.</p>
+
+<p>@par The given location will be used as the referrer for the following events logged.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setPageViewWithURL:(NSURL *)<em>url</em> properties:(NSDictionary *)<em>properties</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>an RFC 2396 compliant url (e.g. tld.test.your-app://page/in/the/app)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>properties</em></dt>
+			<dd><p>additional properties</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll+Advanced.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use the static methods provided instead of instantiating this class.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdRoll.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 AdRoll. All rights reserved. (Last updated: 2014-07-04)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

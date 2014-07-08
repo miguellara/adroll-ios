@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AdRoll.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AdRoll</TokenIdentifier>
+			<Abstract type="html">@abstract
+Track clients and their events to later segment your AdRoll campaigns.</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/initializeWithAdvertisableId:pixelId:</TokenIdentifier>
+			<Abstract type="html">Initialize the service using your AdRoll&apos;s Advertisable and Pixel identifiers.</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)initializeWithAdvertisableId:(NSString *)advertisableId pixelId:(NSString *)pixelId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>advertisableId</Name>
+					<Abstract type="html">the id of the advertisable</Abstract>
+				</Parameter><Parameter>
+					<Name>pixelId</Name>
+					<Abstract type="html">the id of the pixel</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initializeWithAdvertisableId:pixelId:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/setUserId:</TokenIdentifier>
+			<Abstract type="html">A unique id for the user in your app. (typically this is the ID for the user in your database)</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)setUserId:(NSString *)userId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userId</Name>
+					<Abstract type="html">The string name for the user id, nil to clear</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUserId:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/setUserEmail:</TokenIdentifier>
+			<Abstract type="html">The user&apos;s email address.</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)setUserEmail:(NSString *)userEmail</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userEmail</Name>
+					<Abstract type="html">The user&apos;s email address, nil to clear</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUserEmail:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/setUserPhoneNumber:</TokenIdentifier>
+			<Abstract type="html">The user&apos;s phone number.
+Phone numbers are E164 format (without +) Ex: 14151234567</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)setUserPhoneNumber:(NSString *)userPhoneNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userPhoneNumber</Name>
+					<Abstract type="html">The user&apos;s email address or nil to clear</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUserPhoneNumber:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/setHashUserData:</TokenIdentifier>
+			<Abstract type="html">Hash user data (userEmail, userPhone, userId) - if set user data will MD5 hashed.</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)setHashUserData:(BOOL)flag</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>flag</Name>
+					<Abstract type="html">if YES user data will be hashed, clear text values will not be used.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setHashUserData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/logEvent:</TokenIdentifier>
+			<Abstract type="html">Log an application usage event with a given name</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)logEvent:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The event name to be tracked (e.g. AdRollEventName.ProductViewed),
+or you can use a custom name (e.g @&quot;awesome-event&quot;).
+
+Example Usage: [ARPixel logEvent:AdRollEventName.Reservation];</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logEvent:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/logEvent:properties:</TokenIdentifier>
+			<Abstract type="html">Log an application usage event with a given name and properties</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)logEvent:(NSString *)name properties:(NSDictionary *)properties</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The event name to be tracked (e.g. AdRollEventName.ProductViewed),
+or you can use a custom name (e.g @&quot;awesome-event&quot;).</Abstract>
+				</Parameter><Parameter>
+					<Name>properties</Name>
+					<Abstract type="html">The set of properties associated to the event.
+
+Example Usage: [ARPixel logEvent:AdRollEventName.Searched
+properties:@{AdRollEventPropertySearchString : @&quot;mens shoes&quot;}];</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logEvent:properties:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/logEventProductViewed:currency:productId:productName:productType:properties:</TokenIdentifier>
+			<Abstract type="html">A convenience method for logging when content/product is viewed
+Do not call this method for IAP events as they are automatically logged, (unless explicitly disabled)</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)logEventProductViewed:(double)price currency:(NSString *)currency productId:(NSString *)productId productName:(NSString *)productName productType:(NSString *)productType properties:(NSDictionary *)properties</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>price</Name>
+					<Abstract type="html">content/product cost, or 0 if no cost.</Abstract>
+				</Parameter><Parameter>
+					<Name>currency</Name>
+					<Abstract type="html">3 letter ISO-4217 currency code (eg. USD, EUR, GBP, AUD)</Abstract>
+				</Parameter><Parameter>
+					<Name>productId</Name>
+					<Abstract type="html">any type of unique identifier such as SKU or EAN (EAN barcode preferred if available) or nil if none</Abstract>
+				</Parameter><Parameter>
+					<Name>productName</Name>
+					<Abstract type="html">the name or description of the product e.g. @&quot;XBuds Headphones&quot; or nil if none</Abstract>
+				</Parameter><Parameter>
+					<Name>productType</Name>
+					<Abstract type="html">eg. @&quot;product&quot;, @&quot;music&quot;, @&quot;photo&quot;, @&quot;video&quot;.</Abstract>
+				</Parameter><Parameter>
+					<Name>properties</Name>
+					<Abstract type="html">additional properties associated with the purchase, or nil if none.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logEventProductViewed:currency:productId:productName:productType:properties:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/logEventAddedToCart:quantity:currency:productId:productName:productType:properties:</TokenIdentifier>
+			<Abstract type="html">A convenience method for logging when an item has been added to a cart.
+If there are multiple items added to a cart, call logAddToCart for each item</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)logEventAddedToCart:(double)price quantity:(int)quantity currency:(NSString *)currency productId:(NSString *)productId productName:(NSString *)productName productType:(NSString *)productType properties:(NSDictionary *)properties</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>price</Name>
+					<Abstract type="html">content/product cost, or 0 if no cost.</Abstract>
+				</Parameter><Parameter>
+					<Name>quantity</Name>
+					<Abstract type="html">the number of items added.</Abstract>
+				</Parameter><Parameter>
+					<Name>currency</Name>
+					<Abstract type="html">3 letter ISO-4217 currency code (eg. USD, EUR, GBP, AUD)</Abstract>
+				</Parameter><Parameter>
+					<Name>productId</Name>
+					<Abstract type="html">any type of unique identifier such as SKU or EAN (EAN barcode preferred if available) or nil if none</Abstract>
+				</Parameter><Parameter>
+					<Name>productName</Name>
+					<Abstract type="html">the name or description of the product e.g. @&quot;XBuds Headphones&quot; or nil if none</Abstract>
+				</Parameter><Parameter>
+					<Name>productType</Name>
+					<Abstract type="html">eg. @&quot;product&quot;, @&quot;music&quot;, @&quot;photo&quot;, @&quot;video&quot;.</Abstract>
+				</Parameter><Parameter>
+					<Name>properties</Name>
+					<Abstract type="html">additional properties associated with the purchase, or nil if none.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logEventAddedToCart:quantity:currency:productId:productName:productType:properties:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/logEventPurchase:quantity:currency:productId:productName:productType:properties:</TokenIdentifier>
+			<Abstract type="html">A convenience method for logging a non-IAP purchase.
+Do not call this method for IAP events as they are automatically logged, (unless explicitly disabled)</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)logEventPurchase:(double)price quantity:(int)quantity currency:(NSString *)currency productId:(NSString *)productId productName:(NSString *)productName productType:(NSString *)productType properties:(NSDictionary *)properties</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>price</Name>
+					<Abstract type="html">content/product cost, or 0 if no cost.</Abstract>
+				</Parameter><Parameter>
+					<Name>quantity</Name>
+					<Abstract type="html">the number of items added.</Abstract>
+				</Parameter><Parameter>
+					<Name>currency</Name>
+					<Abstract type="html">3 letter ISO-4217 currency code (eg. USD, EUR, GBP, AUD)</Abstract>
+				</Parameter><Parameter>
+					<Name>productId</Name>
+					<Abstract type="html">any type of unique identifier such as SKU or EAN (EAN barcode preferred if available) or nil if none</Abstract>
+				</Parameter><Parameter>
+					<Name>productName</Name>
+					<Abstract type="html">the name or description of the product e.g. @&quot;XBuds Headphones&quot; or nil if none</Abstract>
+				</Parameter><Parameter>
+					<Name>productType</Name>
+					<Abstract type="html">eg. @&quot;product&quot;, @&quot;music&quot;, @&quot;photo&quot;, @&quot;video&quot;.</Abstract>
+				</Parameter><Parameter>
+					<Name>properties</Name>
+					<Abstract type="html">additional properties associated with the purchase, or nil if none.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logEventPurchase:quantity:currency:productId:productName:productType:properties:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/disableAutomaticInAppPurchaseEventLogging</TokenIdentifier>
+			<Abstract type="html">IAP events are automatically logged to simplify segmenting.
+Call this method to disable this feature.</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)disableAutomaticInAppPurchaseEventLogging</Declaration>
+			
+			
+			<Anchor>//api/name/disableAutomaticInAppPurchaseEventLogging</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdRoll/init</TokenIdentifier>
+			<Abstract type="html">Use the static methods provided instead of instantiating this class.</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/setVerboseLogging:</TokenIdentifier>
+			<Abstract type="html">Verbose messages are useful for debugging the integration of the AdRoll SDK in your application.</Abstract>
+			<DeclaredIn>AdRoll.h</DeclaredIn>
+			
+			<Declaration>+ (void)setVerboseLogging:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">\c YES to enable verbose messages.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setVerboseLogging:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/initializeWithAdvertisableId:pixelId:scheme:</TokenIdentifier>
+			<Abstract type="html">Initialize the service using your AdRoll&apos;s Advertisable and Pixel identifiers.</Abstract>
+			<DeclaredIn>AdRoll+Advanced.h</DeclaredIn>
+			
+			<Declaration>+ (void)initializeWithAdvertisableId:(NSString *)advertisableId pixelId:(NSString *)pixelId scheme:(NSString *)scheme</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>advertisableId</Name>
+					<Abstract type="html">the id of the advertisable</Abstract>
+				</Parameter><Parameter>
+					<Name>pixelId</Name>
+					<Abstract type="html">the id of the pixel</Abstract>
+				</Parameter><Parameter>
+					<Name>scheme</Name>
+					<Abstract type="html">an optional schema can be used to identify your app when building segments.
+The provided schema must be a valid URL scheme. See http://www.ietf.org/rfc/rfc2396.txt</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initializeWithAdvertisableId:pixelId:scheme:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/setPageViewWithURL:</TokenIdentifier>
+			<Abstract type="html">Let the current application location to the given page. This method will log a page view event with the
+new location.
+
+@par The given location will be used as the referrer for the following events logged.</Abstract>
+			<DeclaredIn>AdRoll+Advanced.h</DeclaredIn>
+			
+			<Declaration>+ (void)setPageViewWithURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">an RFC 2396 compliant url (e.g. tld.test.your-app://page/in/the/app)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPageViewWithURL:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AdRoll/setPageViewWithURL:properties:</TokenIdentifier>
+			<Abstract type="html">Let the current application location to the given page. This method will log a page view event with the
+new location.
+
+@par The given location will be used as the referrer for the following events logged.</Abstract>
+			<DeclaredIn>AdRoll+Advanced.h</DeclaredIn>
+			
+			<Declaration>+ (void)setPageViewWithURL:(NSURL *)url properties:(NSDictionary *)properties</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">an RFC 2396 compliant url (e.g. tld.test.your-app://page/in/the/app)</Abstract>
+				</Parameter><Parameter>
+					<Name>properties</Name>
+					<Abstract type="html">additional properties</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPageViewWithURL:properties:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
