@@ -26,7 +26,7 @@ Download the AdRoll-iOS-SDK framework with one of the following approaches:
 - As a [git-submodule](http://git-scm.com/docs/git-submodule), run the following command on the console from your project's root directory:
 	
 	```
-$ mkdir -p Vendor && git submodule add git https://github.com/AdRoll/adroll-ios.git Vendor/AdRoll
+$ mkdir -p Vendor && git submodule add https://github.com/AdRoll/adroll-ios.git Vendor/AdRoll
 ```
 	
 - As a zip file, click on the following link: [Download latest version](https://github.com/AdRoll/adroll-ios/archive/master.zip)
