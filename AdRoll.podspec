@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   s.version             = "1.1.3"
   s.summary             = "AdRoll iOS SDK."
 
-  s.homepage            = "https://github.com/SemanticSugar"
+  s.homepage            = "https://github.com/AdRoll"
   s.license             = "Copyright (c) 2014 AdRoll."
   s.author              = { "AdRoll" => "support@adroll.com" }
-  s.source              = { :http => "https://github.com/SemanticSugar/AdRoll-iOS-SDK/archive/master.zip" }
+  s.source              = { :http => "https://github.com/AdRoll/adroll-ios.git" }
   s.social_media_url    = 'https://twitter.com/AdRoll'
 
   s.platform            = :ios, '6.0'
